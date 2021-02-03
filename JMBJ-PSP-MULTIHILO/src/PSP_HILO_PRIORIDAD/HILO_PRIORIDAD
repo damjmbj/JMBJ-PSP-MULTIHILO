@@ -1,0 +1,13 @@
+Prioridades
+
+Los métodos setPriority() y getPriority() establecen y muestran la prioridad de un hilo. La prioridad es un valor entre 1 y 10.
+
+MIN_PRIORITY = 1
+NORM_PRIORITY = 5
+MAX_PRIORITY = 10 
+
+El hilo de mayor prioridad sigue funcionando hasta que:
+
+- Cede el control al método yield()
+- Deja de ser ejecutable(Dead o Bloked)
+- Un hilo de mayor prioridad pasa a estado ejecutable.
